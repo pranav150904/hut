@@ -1,0 +1,38 @@
+"apple" : "I am a red fruit "
+1: "this is pranavs roll no"
+
+lists:
+  -apple
+  -banana
+
+zero : !!int 0
+PositiveNum : !!int 123
+
+infinite : !!int .inf 
+marks : !!float 92.8
+not a num : .nan
+
+#null
+
+surname: !!null Null
+
+#Arrays 
+
+cities : 
+  -hyd
+  -bng 
+  -che
+
+# or 
+
+cities : [hyd, che, bng]
+
+#or 
+
+{city : "hyerabad", state: "tel"}
+
+date : !!timestamp 2026-03-12
+
+no time zone (Z): 2001-12-15 2:59:43.10
+
+commavalue : !!int +540_000 #540,000
