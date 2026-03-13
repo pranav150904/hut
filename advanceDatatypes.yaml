@@ -1,0 +1,22 @@
+student : !!seq
+  -marks
+  -name 
+  -roll_no
+
+sparse seq :
+  -hey 
+  -hello
+  -
+  -Null
+
+#nested sequences 
+-
+  -apple
+  -banana
+-
+  -marks
+  -roll_no
+  -name
+
+#key value pairs
+!!map
