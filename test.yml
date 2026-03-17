@@ -1,21 +1,28 @@
-name : Test Project
+name: Test Project
 
 on:
-  pull-request:
+  pull_request:
     branches:
-      -main
+      - main
 jobs:
   test:
     runs-on: ubuntu-latest
     container:
       image: node:20
     steps:
-      - uses: actions/checkout@v4
-      with:
-        node-version: 20
-      - run : npm ci
-      - run : npm test
-      - run : npm run build
-      
+      - name: Checkout
+        uses: actions/checkout@v4
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
 
+      - name: Install
+        run: npm ci
+
+      - name: Test
+        run: npm test
+
+      - name: Build
+        run: npm run build
