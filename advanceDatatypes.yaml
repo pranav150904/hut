@@ -1,22 +1,21 @@
-student : !!seq
-  -marks
-  -name 
-  -roll_no
+student:
+  - marks
+  - name
+  - roll_no
 
-sparse seq :
-  -hey 
-  -hello
-  -
-  -Null
+sparse_seq:
+  - hey
+  - hello
+  - null
+  - null
 
-#nested sequences 
--
-  -apple
-  -banana
--
-  -marks
-  -roll_no
-  -name
+# nested sequences
+nested_sequences:
+  - [apple, banana]
+  - [marks, roll_no, name]
 
-#key value pairs
-!!map
+# key/value pairs
+profile:
+  name: pranav
+  active: true
+  score: 92.8
