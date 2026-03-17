@@ -36,3 +36,5 @@ date : !!timestamp 2026-03-12
 no time zone (Z): 2001-12-15 2:59:43.10
 
 commavalue : !!int +540_000 #540,000
+
+exponents : 6.023E56
